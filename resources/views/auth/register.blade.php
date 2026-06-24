@@ -89,7 +89,7 @@
                 <div align="center">
                     
                     <h4 style="background-color: #0084b4;">
-                        <a href="{{ url('/') }}" class="logo"><img src="{{ asset('lb-faveo/media/images/logo.png')}}" width="100px;" ></a>
+                        <a href="{{ url('/') }}" class="logo"><img src="{{ asset('images/agco-removebg-preview.png')}}" width="100px;" ></a>
                     </h4>    
                 </div>
                

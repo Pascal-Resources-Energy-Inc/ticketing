@@ -59,7 +59,7 @@
     <body class="skin-blue fixed">
         <div class="wrapper">
             <header class="main-header">
-                <a href="{{ url('/') }}" class="logo"><img src="{{ asset('lb-faveo/media/images/logo.png')}}" width="100px;"></a>
+                <a href="{{ url('/') }}" class="logo"><img src="{{ asset('images/agco-removebg-preview.png')}}" width="100px;"></a>
                 <?php
                 $company = App\Model\helpdesk\Settings\Company::where('id', '=', '1')->first();
                 if ($company != null) {

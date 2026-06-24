@@ -371,7 +371,7 @@
             <aside class="main-sidebar elevation-4 sidebar-dark-black">
 
                 <a href="{{ url('/') }}" class="brand-link " style="text-align: center;">
-                    <img src="{{ asset('lb-faveo/media/images/logo.png')}}" class="brand-image" alt="Company Log0">
+                    <img src="{{ asset('images/agco-removebg-preview.png')}}" class="brand-image" alt="Company Logo">
                 </a>
 
                 <div class="sidebar">
