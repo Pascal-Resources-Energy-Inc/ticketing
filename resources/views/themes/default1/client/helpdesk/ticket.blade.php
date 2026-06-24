@@ -206,7 +206,7 @@ echo UTC::usertimezone(date_format($time, 'd/m/Y H:i:s'));
                                         {!! Form::label('To', 'To:') !!}
                                     </div>
                                     <div class="col-md-10">
-                                        {!! Form::text('To','support@faveohelpdesk.com',array('disabled'),['id'=>'email','class'=>'form-control','style'=>'width:55%'])!!}
+                                        {!! Form::text('To','',array('disabled'),['id'=>'email','class'=>'form-control','style'=>'width:55%'])!!}
                                         {!! $errors->first('To', '<spam class="help-block text-red">:message</spam>') !!}
                         
                                         
@@ -1030,7 +1030,6 @@ function AddCcc(){
                         $("#alert21").show();
                         $('#message-success2').html(message);
                         setInterval(function(){$("#dismiss21").trigger("click"); },2000);   
-                        // $("#refresh1").load( "http://localhost/faveo/public/thread/{{$ticket->id}}   #refresh1");
                     }
                     else
                     {
@@ -1106,7 +1105,6 @@ function AddCcc(){
 
 //             $.ajax({
 //                 type        :   "GET",
-//                 url         :   "http://localhost/faveo/public/ticket/assign/{{$ticket->id}}",
 //                 dataType    :   'html',
 //                 data        :   ({data2:data1}) ,
 //                 success : function(response) {
@@ -1126,7 +1124,7 @@ function AddCcc(){
     $("#search").autocomplete({
         source: function(request, response) {
             $.ajax({
-                url: 'http://localhost/faveo/public/change/owner',
+                url: '{{ url('change/owner') }}',
                 dataType: "json",
                 data: {
                     name_startsWith: request.term,

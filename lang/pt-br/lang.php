@@ -1115,7 +1115,6 @@ return [
      */
     'copyright'           => 'Copyright',
     'all_rights_reserved' => 'Todos os direitos reservados',
-    'powered_by'          => 'Distribuído por',
     'version'             => 'Versão',
     /*
       |------------------------------------------------

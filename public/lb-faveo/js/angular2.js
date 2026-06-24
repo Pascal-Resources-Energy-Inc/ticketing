@@ -17,7 +17,7 @@ myApp.controller('MainController', ['$http', '$scope',
         $scope.Portcontent = 'This is an optional field, by default port no wil be default port no of the database choosen, enter this field only if your database is not running on default port no';
 
         $scope.Databasenametitle = 'Database Name';
-        $scope.Databasenamecontent = 'The name of the database you want to run Faveo in';
+        $scope.Databasenamecontent = 'The name of the database you want to run the helpdesk in';
 
         $scope.Usertitle = 'Database Username';
         $scope.Usercontent = 'Your Database username';
@@ -45,17 +45,17 @@ myApp.controller('MainController', ['$http', '$scope',
         $scope.Confirmtitle = 'Confirm Password';
         $scope.Confirmcontent = 'Type the same password as above';
         
-        $scope.Languagetitle = 'Faveo Language';
-        $scope.Languagecontent = 'The language you want to run Faveo in';
+        $scope.Languagetitle = 'Helpdesk Language';
+        $scope.Languagecontent = 'The language you want to run the helpdesk in';
         
         $scope.Timezonetitle = 'Time Zone';
-        $scope.Timezonecontent = 'Faveo default time zone';
+        $scope.Timezonecontent = 'Helpdesk default time zone';
 
-        $scope.Datetimetitle = 'Faveo Date & Time format';
-        $scope.Datetimecontent = 'What format you want to display date & time in Faveo';
+        $scope.Datetimetitle = 'Helpdesk Date & Time format';
+        $scope.Datetimecontent = 'What format you want to display date & time in the helpdesk';
 
-        $scope.DummyDataTitle = 'Faveo Dummy Data';
-        $scope.DummyDataContent = 'Check this chekbox if you want to install and test Faveo with dummy data. You can clear dummy data and start using Faveo in production anytime.';
+        $scope.DummyDataTitle = 'Helpdesk Dummy Data';
+        $scope.DummyDataContent = 'Check this checkbox if you want to install and test the helpdesk with dummy data. You can clear dummy data and start using the helpdesk in production anytime.';
                 
     }
 ]);

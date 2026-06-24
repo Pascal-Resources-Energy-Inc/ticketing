@@ -1880,7 +1880,6 @@ if ($thread->title != "") {
                     $("#alert10").css('display','block');
                     $('#message-success0').html(message);
                     setInterval(function(){$("#dismiss11").trigger("click"); }, 2000);
-                    // $("#refresh1").load( "http://localhost/faveo/public/thread/{{$tickets->id}}   #refresh1");
                     $('#surrender_button').hide();
                     location.reload();
             }

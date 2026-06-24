@@ -811,7 +811,6 @@ return [
      */
     'copyright'           => 'Copyright',
     'all_rights_reserved' => 'Alle Rechte vorbehalten',
-    'powered_by'          => 'Powered by',
     'version'             => 'Version',
     /*
       |------------------------------------------------

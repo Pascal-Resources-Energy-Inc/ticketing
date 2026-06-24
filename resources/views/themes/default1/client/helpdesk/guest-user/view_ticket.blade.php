@@ -1059,7 +1059,6 @@ function AddCcc(){
                         $("#alert21").show();
                         $('#message-success2').html(message);
                         setInterval(function(){$("#dismiss21").trigger("click"); },2000);   
-                        // $("#refresh1").load( "http://localhost/faveo/public/thread/{{$tickets->id}}   #refresh1");
                     }
                     else
                     {
@@ -1135,7 +1134,6 @@ function AddCcc(){
 
 //             $.ajax({
 //                 type        :   "GET",
-//                 url         :   "http://localhost/faveo/public/ticket/assign/{{$tickets->id}}",
 //                 dataType    :   'html',
 //                 data        :   ({data2:data1}) ,
 //                 success : function(response) {
@@ -1155,7 +1153,7 @@ function AddCcc(){
     $("#search").autocomplete({
         source: function(request, response) {
             $.ajax({
-                url: 'http://localhost/faveo/public/change/owner',
+                url: '{{ url('change/owner') }}',
                 dataType: "json",
                 data: {
                     name_startsWith: request.term,

@@ -8,7 +8,6 @@ use App\Model\Update\BarNotification;
 use Artisan;
 use Exception;
 use Illuminate\Http\Request;
-use Illuminate\Support\Str;
 
 class UpgradeController extends Controller
 {
@@ -22,61 +21,12 @@ class UpgradeController extends Controller
 
     public function getLatestVersion()
     {
-        try {
-            $name = \Config::get('app.name');
-            //dd($name);
-            //serial key should be encrypted data
-            $serial_key = '64JAHF9WVJA4GCUZ';
-            //order number should be encrypted data
-            $order_number = '44596328';
-            $url = env('APP_URL');
-            $data = [
-                'serial_key'   => $serial_key,
-                'order_number' => $order_number,
-                'name'         => $name,
-                'version'      => Utility::getFileVersion(),
-                'request_type' => 'check_update',
-                'url'          => $url,
-            ];
-            $data = Utility::encryptByFaveoPublicKey(json_encode($data));
-            //dd($data);
-            $post_data = [
-                'data' => $data,
-            ];
-            $url = 'http://faveohelpdesk.com/billing/public/verification';
-            if (Str::contains($url, ' ')) {
-                $url = str_replace(' ', '%20', $url);
-            }
-            $curl = $this->postCurl($url, $post_data);
-            if (is_array($curl)) {
-                if (array_key_exists('status', $curl)) {
-                    if ($curl['status'] == 'success') {
-                        if (array_key_exists('version', $curl)) {
-                            return $curl['version'];
-                        }
-                    }
-                }
-            }
-        } catch (\Exception $ex) {
-            return redirect()->back()->with('fails', $ex->getMessage());
-        }
+        return null;
     }
 
     public function downloadLatestCode()
     {
-        $name = \Config::get('app.name');
-        $durl = 'http://www.faveohelpdesk.com/billing/public/download-url';
-        if (Str::contains($durl, ' ')) {
-            $durl = str_replace(' ', '%20', $durl);
-        }
-        $data = [
-            'name' => $name,
-        ];
-        $download = $this->postDownloadCurl($durl, $data);
-
-        $download_url = $download['zipball_url'];
-
-        return $download_url;
+        return null;
     }
 
     public function saveLatestCodeAtTemp($download_url)

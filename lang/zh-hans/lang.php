@@ -1160,7 +1160,6 @@ return [
      */
     'copyright'           => '版权',
     'all_rights_reserved' => '版权所有',
-    'powered_by'          => '技术支持',
     /*
       |------------------------------------------------
       |Guest-User Page

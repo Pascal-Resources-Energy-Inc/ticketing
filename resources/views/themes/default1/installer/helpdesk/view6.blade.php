@@ -22,10 +22,6 @@ active
 
 @section('content')
 
-        <a class="twitter-share-button" target="_blank" href="https://twitter.com/intent/tweet?text=I just set up a new HELPDESK with @faveohelpdesk www.faveohelpdesk.com">
-            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-uhinU3OzXKj9zlFO7dFxHaChqyHPcWWg5nWgMqYt6N5b3knK" style="width: 86px; float: right;">
-        </a>
-
         <h1 style="text-align: center;">{!! Lang::get('lang.your_helpdesk_is_ready') !!}</h1>
 <div class="woocommerce-message woocommerce-tracker">
                 <p>{!! Lang::get('lang.all_right_sparky_you_have_made_it') !!}</p>
@@ -58,9 +54,6 @@ active
                 <ul>
                     <li class="video-walkthrough"><a target="_blank" href="https://www.youtube.com/channel/UC-eqh-h241b1janp6sU7Iiw">{!! Lang::get('lang.video_walk_through') !!}</a>
                     </li>
-                    <li class="sidekick"><a target="_blank" href="https://www.support.faveohelpdesk.com/knowledgebase">{!! Lang::get('lang.knowledge_base') !!}</a>
-                    </li>
-
                     <li class="newsletter"><a href="mailto:support@ladybirdweb.com">{!! Lang::get('lang.email_support') !!}</a>
                     </li>
                     <br>

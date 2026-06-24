@@ -22,7 +22,7 @@ class="nav-link active"
 <div class="alert alert-info alert-dismissable">
     <i class="fas fa-info-circle"></i>
     <span>{!! Lang::get('lang.plugin-info') !!}</span><br/>
-    <a href="http://www.faveohelpdesk.com/plugins/" target="_blank">{!!Lang::get('lang.click-here')!!}</a>&nbsp;{!!Lang::get('lang.plugin-info-pro')!!}
+    {!!Lang::get('lang.plugin-info-pro')!!}
 </div>
 @if (count($errors) > 0)
 <div class="alert alert-danger alert-dismissable">

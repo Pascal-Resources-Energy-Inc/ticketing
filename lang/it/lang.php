@@ -1168,7 +1168,6 @@ return [
      */
     'copyright'           => 'Copyright',
     'all_rights_reserved' => 'Tutti i diritti riservati',
-    'powered_by'          => 'Sviluppato da',
     /*
       |------------------------------------------------
       |Guest-User Page

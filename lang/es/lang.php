@@ -1177,7 +1177,6 @@ return [
      */
     'copyright'           => 'Copyleft',
     'all_rights_reserved' => 'All rights reserved',
-    'powered_by'          => 'Powered by',
     /*
       |------------------------------------------------
       |Página de usuario invitado

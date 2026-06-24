@@ -6,8 +6,8 @@ active
 
 @section('content')
     <div class="wc-setup-content" ng-app="myApp">
-        <h1 style="text-align: center;">Faveo HELPDESK Serial Key</h1>
-        <p><strong>Please enter your serial key for Faveo HELPDESK PRO</strong></p>
+        <h1 style="text-align: center;">Helpdesk Serial Key</h1>
+        <p><strong>Please enter your helpdesk serial key</strong></p>
                 @if(Session::has('success'))
                     <div class="wc-setup-content">
                         <div class="woocommerce-message woocommerce-tracker">

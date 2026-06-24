@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-        <title>Faveo | KB</title>
+        <title>Knowledge Base</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.4 -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -37,7 +37,7 @@
       <header class="main-header">
             <?php $settings = App\Model\Settings::where('id', '=', '1')->first();?>
             <img src="{{asset('Img/icon/faveokb.jpg')}}" class="logo" alt="Knowledge Base"/>
-                {{-- <a href="../../index2.html" class="logo"><b>Faveo</b> Knowledge</a> --}}
+                {{-- <a href="../../index2.html" class="logo"><b>Knowledge Base</b></a> --}}
                 <!-- Header Navbar: style can be found in header.less -->
                 <nav class="navbar navbar-static-top" role="navigation">
                     <!-- Sidebar toggle button-->
@@ -199,7 +199,7 @@
                 <div class="pull-right hidden-xs">
                     <b>{!! Lang::get('lang.version') !!}</b> {{$settings->version}}
                 </div>
-                 <strong>Copyright &copy; {{date("Y")}} <a href="{{$settings->website}}"> {{$settings->company_name}}</a>.  Powered By <a href="http://www.faveohelpdesk.com">Faveo</a>.</strong>
+                 <strong>Copyright &copy; {{date("Y")}} <a href="{{$settings->website}}"> {{$settings->company_name}}</a>. All rights reserved.</strong>
             </footer>
 
       <!-- Control Sidebar -->
