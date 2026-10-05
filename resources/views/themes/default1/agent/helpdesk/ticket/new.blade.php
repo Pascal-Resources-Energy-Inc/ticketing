@@ -108,6 +108,8 @@ class="active"
                                 {!! Form::text('email',null,['class' => 'form-control', 'id' => 'email']) !!}
                             </div>
                         </div>
+
+                        <div id="response" class="col-md-12 form-group"></div>
                         
                         <div class="col-md-4">
                             <!-- email -->
@@ -212,7 +214,6 @@ class="active"
                                 {!! Form::select('assignto', [''=>'Select an Agent','Agents'=>$agents->pluck('first_name','id')->toArray()],null,['class' => 'form-control select']) !!}
                             </div>
                         </div>
-                        <div id="response" class="col-md-6 form-group"></div>
                     </div>
                     <div class="row">
                     {{-- Event fire --}}
